@@ -1,6 +1,6 @@
-theme: minimia
+theme: minima
 
-minimia:
+minima:
   skin: dark
   date_format: "%Y-%m-%d %H:%M"
   social_links:
