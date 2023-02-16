@@ -1,6 +1,4 @@
----
-title: Oh hello there! 👋
----
+# Oh hello there! 👋
 
 I'm [NoLifeKing](https://nolifeking85.tv) (or as I'm named here, itssimple, or just actually.. Chris).
 
