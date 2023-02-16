@@ -25,7 +25,7 @@ The IT-guy who loves a challenge and to expand his knowledge into new areas.
 | Language | Skill level             |
 |:---------|:------------------------|
 | Swedish  | Native (C2)             |
-| English  | Upper intermediate (B2) |
+| English  | Advanced/Fluent (C1)    |
 | German   | Beginner (A1)           |
 | Japanese | Beginner (A1)           |
 
