@@ -2,6 +2,7 @@
 
 permalink: /
 title: Oh hello there! 👋
+layout: page
 
 ---
 
