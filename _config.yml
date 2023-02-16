@@ -4,7 +4,7 @@ author:
   name: itssimple
   email: "github-emails@itssimple.se"
 
-theme: jekyll/minima
+remote_theme: jekyll/minima
 
 minima:
   skin: auto
