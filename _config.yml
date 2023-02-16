@@ -2,12 +2,12 @@ title: NoLifeKing / It's Simple
 
 author:
   name: itssimple
-  email: github-emails@itssimple.se
+  email: "github-emails@itssimple.se"
 
-theme: minima
+theme: jekyll/minima
 
 minima:
-  skin: dark
+  skin: auto
   date_format: "%Y-%m-%d %H:%M"
   social_links:
     - { platform: github, user_url: "https://github.com/itssimple" }
