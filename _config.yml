@@ -1,0 +1,12 @@
+theme: minimia
+
+minimia:
+  skin: dark
+  date_format: "%Y-%m-%d %H:%M"
+  social_links:
+    - { platform: github, user_url: "https://github.com/itssimple" }
+    - { platform: instagram, user_url: "https://instagram.com/NoLifeKing85" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/nolifeking/" }
+    - { platform: stackoverflow, user_url: "https://stackoverflow.com/users/1025823/nolifeking" }
+    - { platform: twitter, user_url: "https://twitter.com/NoLifeKing85" }
+    
