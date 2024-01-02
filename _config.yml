@@ -15,4 +15,6 @@ minima:
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/nolifeking/" }
     - { platform: stackoverflow, user_url: "https://stackoverflow.com/users/1025823/nolifeking" }
     - { platform: twitter, user_url: "https://twitter.com/NoLifeKing85" }
-    
+    - { platform: youtube, user_url: "https://www.youtube.com/channel/UCSzCFvwLTzpyDoZM5X0uKgg" }
+    - { platform: facebook, user_url: "https://www.facebook.com/NoLifeKing85/" }
+
