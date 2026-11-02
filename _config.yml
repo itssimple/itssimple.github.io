@@ -1,20 +1,42 @@
-title: NoLifeKing / It's Simple
+title: NoLifeKing / It's Simple Studios
 
 author:
   name: itssimple
   email: "github-emails@itssimple.se"
 
+description: >
+  The consultant NoLifeKing and what services he provides.
+
 remote_theme: jekyll/minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
 
 minima:
   skin: auto
   date_format: "%Y-%m-%d %H:%M"
   social_links:
-    - { platform: github, user_url: "https://github.com/itssimple" }
-    - { platform: instagram, user_url: "https://instagram.com/NoLifeKing85" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/nolifeking/" }
-    - { platform: stackoverflow, user_url: "https://stackoverflow.com/users/1025823/nolifeking" }
-    - { platform: twitter, user_url: "https://twitter.com/NoLifeKing85" }
-    - { platform: youtube, user_url: "https://www.youtube.com/channel/UCSzCFvwLTzpyDoZM5X0uKgg" }
-    - { platform: facebook, user_url: "https://www.facebook.com/NoLifeKing85/" }
+    - title: itssimple at GitHub
+      icon: github
+      url: "https://github.com/itssimple"
+    - title: NoLifeKing85 at Instagram
+      icon: instagram
+      url: "https://instagram.com/NoLifeKing85"
+    - title: NoLifeKing at LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/nolifeking/"
+    - title: NoLifeKing at StackOverflow
+      icon: stackoverflow
+      url: "https://stackoverflow.com/users/1025823/nolifeking"
+    - title: NoLifeKing85 at X / Twitter
+      icon: x-twitter
+      url: "https://twitter.com/NoLifeKing85"
+    - title: NoLifeKing85 at YouTube
+      icon: youtube
+      url: "https://www.youtube.com/channel/UCSzCFvwLTzpyDoZM5X0uKgg"
+    - title: NoLifeKing85 at Facebook
+      icon: facebook
+      url: "https://www.facebook.com/NoLifeKing85/"
 
