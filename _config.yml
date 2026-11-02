@@ -1,22 +1,28 @@
 title: NoLifeKing / It's Simple Studios
 
 author:
-  name: itssimple
-  email: "github-emails@itssimple.se"
+  name: NoLifeKing
+  email: "nolifeking@nolifeking85.tv"
 
 description: >
   The consultant NoLifeKing and what services he provides.
 
 remote_theme: jekyll/minima
 
+excerpt_separator: "<!--more-->"
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-paginate
+
+paginate: 5
 
 minima:
   skin: auto
   date_format: "%Y-%m-%d %H:%M"
+  show_excerpts: true
   social_links:
     - title: itssimple at GitHub
       icon: github
@@ -28,7 +34,7 @@ minima:
       icon: linkedin
       url: "https://www.linkedin.com/in/nolifeking/"
     - title: NoLifeKing at StackOverflow
-      icon: stackoverflow
+      icon: stack-overflow
       url: "https://stackoverflow.com/users/1025823/nolifeking"
     - title: NoLifeKing85 at X / Twitter
       icon: x-twitter
