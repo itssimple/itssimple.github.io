@@ -1,0 +1,11 @@
+﻿---
+layout: post
+title: "Journal Limpet, what is that?"
+date: 2020-12-07 07:29:16 +0000
+author: NoLifeKing
+tags:
+- elite dangerous
+- journal limpet
+---
+
+<p>So, I know I haven't been streaming, posting or been visible in social media for a while..</p><p>.. and I can't really blame anything else than myself. I haven't really felt like doing anything at all, so I've done some low maintenance stuff other than working.</p><!--more--><p>One project that started this year is something called "Journal Limpet", which aims to be a central service for all third party tools for the awesome game <a href="https://www.elitedangerous.com/">Elite: Dangerous</a>, by the awesome <a href="https://www.frontier.co.uk/">Frontier Developments</a>!</p><p>.. right, back to what it's about.. So, my aim for the project (thanks to <a href="https://spansh.co.uk/">Spansh</a>, who gave me a lot of ideas and tips for that) is to be able to store the player journals for all (connected) users, for a longer period than 30 days (at least up to 180 days, but hopefully more), where the user can list and download their journals, and also connect their Journal Limpet-account (which really is their Frontier account), to third party tools that ingest player journals, so that we have a single service that collects journals, so that other services don't have to hammer Frontier's API.</p><p>I mean, heck, I'll even throw in a journal replayer for <a href="https://eddn.edcd.io/">EDDN</a>, just for the sake of it!</p><p>So, what's working as of now (25th December, 2020)?</p><ul><li>Frontier auth</li><li>Refreshing end user tokens</li><li>Notifications to end users that they need to login to refresh their tokens, so we can refresh their tokens again</li><li>Start polling Frontier cAPI to grab those tasty journals</li><li>Make a settings page where you can set your notification email (for above notification)</li><li>Ability to download your journals</li></ul><p>If you have any questions, I'm more than willing to answer them at the <a href="https://discord.gg/zQjjutY">EDCD</a> (3rd party developer discord), or at my <a href="https://discord.gg/6fP8vWW">personal discord</a>.</p>

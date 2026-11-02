@@ -1,6 +1,6 @@
 ---
 
-permalink: /
+permalink: /me
 title: Oh hello there! 👋
 layout: page
 
