@@ -16,8 +16,7 @@ These are some of the skills that I currently have, among other things. (I'm by 
 {% for category in sorted_skills %}
 
 ### {{ category.category }}
-{% for skill in category.items %}
-- {{ skill }}
+{% for skill in category.items %}- {{ skill }}
 {% endfor %}
 
 {% endfor %}
