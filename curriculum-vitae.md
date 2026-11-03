@@ -28,14 +28,12 @@ These are some of the skills that I currently have, among other things. (I'm by 
 <table>
   <thead>
     <tr>
-      <th>Period of Time</th>
       <th>Role</th>
     </tr>
   </thead>
   <tbody>
   {% for experience in sorted_experiences %}
     <tr>
-      <td><b>{{ experience.period }}</b></td>
       <td>
         <b>
         {% if experience.link %}
@@ -45,7 +43,7 @@ These are some of the skills that I currently have, among other things. (I'm by 
         {% else %}
         {{ experience.company }}
         {% endif %}
-        </b><br />
+        </b> ({{ experience.period }})<br />
         <i>{{ experience.role }}</i><br />
        {{ experience.description }}
       </td>
@@ -61,18 +59,16 @@ These are some of the skills that I currently have, among other things. (I'm by 
 <table>
   <thead>
     <tr>
-      <th>Period of Time</th>
       <th>Role</th>
     </tr>
   </thead>
   <tbody>
     {% for education in sorted_education %}
     <tr>
-      <td><b>{{ education.period }}</b></td>
       <td>
         <b>
         {{ education.company }}
-        </b><br />
+        </b> ({{ education.period }})<br />
         <i>{{ education.title }}</i><br />
        {{ education.description }}
       </td>
