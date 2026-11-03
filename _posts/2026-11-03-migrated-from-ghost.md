@@ -14,7 +14,7 @@ I decided to take this time to get away from my self-hosted Ghost platform,
 to get rid of one of the NodeJS-projects running on my server.
 
 So what's new since last post [A wrapper to get data about your TCP connections]({% post_url 2022-07-11-a-wrapper-to-get-data-about-your-tcp-connections %}), so in the last 4 years then.. :'D
-
+<!--more-->
 TL;DR..
 
 ## 2023
