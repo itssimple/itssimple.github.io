@@ -25,9 +25,69 @@ layout: base
   .post-list hr {
     border-color: var(--minima-border-color-01);
   }
+
+    .homepage-intro {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--minima-border-color-01);
+  }
+
+  .homepage-intro h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
+  }
+
+  .homepage-intro p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+
+  .homepage-intro p:last-child {
+    margin-bottom: 0;
+  }
+
+    .blog-heading {
+    margin: 0 0 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .blog-heading span {
+    display: block;
+    margin-top: 0.35rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    opacity: 0.65;
+  }
 </style>
 
 <div class="home">
+<section class="homepage-intro">
+  <h2>Professionally curious. Occasionally productive.</h2>
+
+  <p>
+    I write code, build systems, fix things that shouldn't be broken,
+    and occasionally break things that were working perfectly fine.
+    I've been doing this for over 20 years, and somehow I still enjoy it.
+  </p>
+
+  <p>
+    This is where I dump projects, experiments, ideas, and the occasional
+    technical rabbit hole. Some are useful. Some are questionable.
+    All of them are mine.
+  </p>
+</section>
+
+<h2 class="blog-heading">
+  From the blog
+  <span>Thoughts, projects, and other things worth writing down.</span>
+</h2>
+
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
