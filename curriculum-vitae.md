@@ -1,6 +1,7 @@
 ---
 permalink: /curriculum-vitae/
-title: Curriculum Vitae - Chris
+title: Curriculum Vitae
+nav_title: CV
 layout: page
 ---
 

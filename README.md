@@ -2,6 +2,7 @@
 
 permalink: /me
 title: Oh hello there! 👋
+nav_title: Chris
 layout: page
 
 ---

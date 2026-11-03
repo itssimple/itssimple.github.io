@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Freelance SQL Server DBA & Full-Stack Consultant
+nav_title: Consultant
 description: >-
   Senior freelance IT consultant in Sweden: SQL Server performance tuning,
   emergency DBA support and full-stack .NET/TypeScript development for
