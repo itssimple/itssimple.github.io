@@ -1,0 +1,86 @@
+{%- comment -%}
+  JSON-LD for the consulting page, built from _data/consulting.yml.
+  Enabled per page with `consulting_schema:` in front matter (see consultant-services.md).
+{%- endcomment -%}
+{%- assign schema = page.consulting_schema -%}
+{%- assign page_url = page.url | absolute_url -%}
+{%- assign business_id = page_url | append: "#business" -%}
+{%- assign sorted_categories = site.data.consulting.categories | sort: "order" -%}
+{%- assign all_services = site.data.consulting.services | sort: "order" -%}
+{%- assign prices = site.data.consulting.services | map: "price" | sort -%}
+{%- capture price_range -%}{{ prices | first }}–{{ prices | last }} SEK{%- endcapture -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": {{ business_id | jsonify }},
+  "name": {{ site.title | jsonify }},
+  "url": {{ page_url | jsonify }},
+  "description": {{ page.description | strip | jsonify }},
+  {%- if page.image.path %}
+  "image": {{ page.image.path | absolute_url | jsonify }},
+  {%- endif %}
+  {%- if schema.email %}
+  "email": {{ schema.email | prepend: "mailto:" | jsonify }},
+  {%- endif %}
+  "priceRange": {{ price_range | jsonify }},
+  "currenciesAccepted": "SEK",
+  "address": { "@type": "PostalAddress", "addressCountry": "SE" },
+  "areaServed": [
+    {%- for area in schema.area_served %}
+    { "@type": "Place", "name": {{ area | jsonify }} }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "sameAs": [
+      {%- for link in site.minima.social_links %}
+      {{ link.url | jsonify }}{% unless forloop.last %},{% endunless %}
+      {%- endfor %}
+    ]
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": {{ page.title | jsonify }},
+    "itemListElement": [
+      {%- for category in sorted_categories %}
+      {%- assign category_services = all_services | where: "category", category.id %}
+      {
+        "@type": "OfferCatalog",
+        "name": {{ category.title | jsonify }},
+        "description": {{ category.description | strip | jsonify }},
+        "url": {{ page_url | append: "#" | append: category.id | jsonify }},
+        "itemListElement": [
+          {%- for service in category_services %}
+          {
+            "@type": "Offer",
+            "url": {{ page_url | append: "#" | append: service.id | jsonify }},
+            "price": {{ service.price | jsonify }},
+            "priceCurrency": "SEK",
+            {%- if service.pricing == "hourly" %}
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": {{ service.price | jsonify }},
+              "priceCurrency": "SEK",
+              "unitCode": "HUR",
+              "unitText": "hour"
+            },
+            {%- endif %}
+            "itemOffered": {
+              "@type": "Service",
+              "@id": {{ page_url | append: "#" | append: service.id | jsonify }},
+              "name": {{ service.title | jsonify }},
+              "description": {{ service.description | strip | jsonify }},
+              "serviceType": {{ category.title | jsonify }},
+              "provider": { "@id": {{ business_id | jsonify }} }
+            }
+          }{% unless forloop.last %},{% endunless %}
+          {%- endfor %}
+        ]
+      }{% unless forloop.last %},{% endunless %}
+      {%- endfor %}
+    ]
+  }
+}
+</script>

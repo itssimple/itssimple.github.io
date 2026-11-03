@@ -1,0 +1,142 @@
+categories:
+  - id: software-engineering
+    title: Software Engineering
+    description: >-
+      Application development, backend architecture, automation tooling, and modernization of existing software.
+    order: 10
+  - id: database-engineering
+    title: Database Engineering & Performance
+    description: >-
+      Continuous performance analysis, query tuning, architecture optimization, and database system health audits.
+    order: 20
+  - id: operations-support
+    title: Operations, Maintenance & Incident Support
+    description: >-
+      Ongoing runtime support, rapid production debugging, standard code upgrades, and emergency system assistance.
+    order: 30
+  - id: consulting-training
+    title: Consulting & Training
+    description: >-
+      Strategic advisory sessions, developer-centric workshops, engineering alignment meetings, and tech feasibility research.
+    order: 40
+
+services:
+  # Software Engineering (software-engineering)
+  - id: full-stack-programming
+    category: software-engineering
+    title: Full-Stack Software Engineering & Programming
+    description: >-
+      End-to-end software development, API integrations, and feature implementation tailored to project specifications and modern development stacks.
+    price: 1100
+    pricing: hourly
+    order: 10
+  - id: high-performance-backend
+    category: software-engineering
+    title: High-Performance Backend & API Architecture
+    description: >-
+      Designing and building ultra-fast, scalable APIs and microservices using TypeScript (NodeJS/Bun) or C# (.NET) optimized for heavy database throughput.
+    price: 1400
+    pricing: hourly
+    order: 20
+  - id: legacy-codebase-modernization
+    category: software-engineering
+    title: Legacy Codebase Modernization & Refactoring
+    description: >-
+      Auditing and restructuring technical debt in mature C#, PHP, or Node.js applications, upgrading runtime environments (e.g., migrating Node to Bun), and improving maintainability.
+    price: 1350
+    pricing: hourly
+    order: 30
+  - id: custom-cli-automation
+    category: software-engineering
+    title: Custom CLI Automation & DevOps Tooling
+    description: >-
+      Developing high-performance Command Line Interfaces (CLI) and automated scripts to streamline data processing, system migrations, or internal operations.
+    price: 1250
+    pricing: hourly
+    order: 40
+
+  # Database Engineering & Performance (database-engineering)
+  - id: sql-server-performance-tuning
+    category: database-engineering
+    title: SQL Server Performance Tuning & Query Optimization
+    description: >-
+      Deep-dive analysis of server bottlenecks (Wait Stats, Parameter Sniffing, heavy execution plans) and optimization of source code, queries, and indexing.
+    price: 1500
+    pricing: hourly
+    order: 10
+  - id: index-statistics-overhaul
+    category: database-engineering
+    title: Index & Statistics Strategy Overhaul
+    description: >-
+      Identification and removal of unused indexes, implementation of missing indexes, and optimization of scheduled maintenance jobs for database statistics.
+    price: 1400
+    pricing: hourly
+    order: 20
+  - id: db-code-review
+    category: database-engineering
+    title: Database Code Review for Development Teams
+    description: >-
+      Proactive audit of ORM-generated queries (Entity Framework, NHibernate, etc.) to eliminate N+1 problems and inefficient data access patterns before code hits production.
+    price: 1400
+    pricing: hourly
+    order: 30
+  - id: sql-server-health-check
+    category: database-engineering
+    title: SQL Server Health Check & Risk Assessment
+    description: >-
+      Comprehensive review of SQL Server configuration (MAXDOP, Cost Threshold for Parallelism, TempDB allocation) and identification of hidden performance risks based on industry best practices.
+    price: 15000
+    pricing: fixed
+    order: 40
+
+  # Operations, Maintenance & Incident Support (operations-support)
+  - id: emergency-dba-support
+    category: operations-support
+    title: Emergency DBA Support & P1 Incident Response
+    description: >-
+      Priority database incident response and emergency troubleshooting addressing critical production failures, data availability issues, and severe performance degradation.
+    price: 2500
+    pricing: hourly
+    order: 10
+  - id: system-troubleshooting-bugs
+    category: operations-support
+    title: System Troubleshooting & Bug Rectification
+    description: >-
+      Diagnostic investigation, root-cause analysis, and hotfixing of software bugs, runtime errors, and application performance degradations.
+    price: 1200
+    pricing: hourly
+    order: 20
+  - id: ongoing-software-maintenance
+    category: operations-support
+    title: Ongoing Software Maintenance & System Support
+    description: >-
+      System maintenance, library updates, security patching, and minor modifications to ensure operational stability.
+    price: 1100
+    pricing: hourly
+    order: 30
+
+  # Consulting & Training (consulting-training)
+  - id: tech-feasibility-study
+    category: consulting-training
+    title: Technical Feasibility Study & Software Architecture
+    description: >-
+      Requirements gathering, system design, tech-stack evaluation, and architectural blueprinting for upcoming software development projects.
+    price: 1250
+    pricing: hourly
+    order: 10
+  - id: workshop-db-optimization-full
+    category: consulting-training
+    title: "Workshop: Database Optimization for Developers (Full day)"
+    description: >-
+      Tailored full-day training sessions teaching internal development teams how to write database-friendly code, design efficient indexes, and interpret execution plans.
+    price: 20000
+    pricing: fixed
+    order: 20
+  - id: workshop-db-optimization-half
+    category: consulting-training
+    title: "Workshop: Database Optimization for Developers (Half-day)"
+    description: >-
+      Tailored half-day training sessions teaching internal development teams how to write database-friendly code, design efficient indexes, and interpret execution plans.
+    price: 12000
+    pricing: fixed
+    order: 30
